@@ -1,0 +1,25 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "Github Actions CICD",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "rayudu",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "unique-names-generator": "^4.7.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rayudusubrahmanyam12/github-actions-cicd.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rayudusubrahmanyam12/github-actions-cicd/issues"
+  },
+  "homepage": "https://github.com/rayudusubrahmanyam12/github-actions-cicd#readme"
+}
