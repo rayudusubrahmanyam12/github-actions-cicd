@@ -27,6 +27,13 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm ci
-    - run: npm run build --if-present
+    - name: build and run
+      run: |
+        npm ci
+        npm run build --if-present
+    - name: super linter
+      uses: docker://github/super-linter@v3
+      env:
+        VALIDATE_ALL_CODEBASE: false
+        DEFAULT_BRANCH: master
 
