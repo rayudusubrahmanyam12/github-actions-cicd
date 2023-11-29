@@ -1,12 +1,10 @@
-# Schedule Event 
-name: Schedule Event
+name: manul trigger
 on:
-  schedule: 
-  -  cron: 1 * * * *
+ workflow_dispatch:
 jobs:
-  schedule-job:
+  build:
     runs-on: ubuntu-latest
     steps:
     - name: checkout
       uses: actions/checkout:v2
-      
+
