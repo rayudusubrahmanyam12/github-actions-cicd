@@ -1,0 +1,14 @@
+# Schedule Event 
+name: Schedule Event
+
+on:
+  schedule: 
+  -  cron: 1****
+
+jobs:
+  schedule-job:
+
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout
+      uses: actions/checkout:v2
